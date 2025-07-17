@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Facturación</title>
+</head>
+<body>
+    <h1>Formulario de Facturación</h1>
+    <form method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>RFC:</label><br>
+        <input type="text" name="rfc" required><br><br>
+
+        <label>Régimen Fiscal:</label><br>
+        <select name="regimen" required>
+            <option value="601">601 - General de Ley Personas Morales</option>
+            <option value="603">603 - Personas Morales con Fines no Lucrativos</option>
+            <option value="610">610 - Residentes en el Extranjero sin Establecimiento Permanente en México</option>
+            <option value="620">620 - Sociedades Cooperativas de Producción que optan por diferir sus ingresos</option>
+            <option value="622">622 - Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras</option>
+            <option value="623">623 - Opcional para Grupos de Sociedades</option>
+            <option value="624">624 - Coordinados</option>
+            <option value="626">626 - Régimen Simplificado de Confianza</option>
+        </select><br><br>
+
+        <label>Uso del CFDI:</label><br>
+        <select name="cfdi" required>
+            <option value="G01">G01 - Adquisición de mercancías</option>
+            <option value="G02">G02 - Devoluciones, descuentos o bonificaciones</option>
+            <option value="G03">G03 - Gastos en general</option>
+            <option value="I01">I01 - Construcciones</option>
+            <option value="I02">I02 - Mobiliario y equipo de oficina por inversiones</option>
+            <option value="I04">I04 - Equipo de cómputo y accesorios</option>
+            <option value="I05">I05 - Dados, troqueles, moldes, matrices y herramental</option>
+            <option value="I06">I06 - Comunicaciones telefónicas</option>
+            <option value="I08">I08 - Otra maquinaria y equipo</option>
+            <option value="S01">S01 - Sin efectos fiscales</option>
+        </select><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
